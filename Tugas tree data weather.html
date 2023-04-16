@@ -63,7 +63,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas tree data weather';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Machine Learning Basics: Naive Bayes Classification" href="Naive%20Bayes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,13 +153,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Naive%20Bayes.html"><strong>Machine Learning Basics: Naive Bayes Classification</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>DECISION TREE DATA WEATHER</strong></a></li>
-
-
-</ul>
-
+        
     </div>
 </nav></div>
     </div>
@@ -470,7 +463,7 @@ Berikut adalah decision tree:</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c88bb701-72b0-4440-b513-2ffdcb027f78">
+  <div id="df-2e5a0e51-c76c-4b31-aefa-34644d1a50bd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -688,7 +681,7 @@ Berikut adalah decision tree:</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c88bb701-72b0-4440-b513-2ffdcb027f78')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2e5a0e51-c76c-4b31-aefa-34644d1a50bd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -739,12 +732,12 @@ Berikut adalah decision tree:</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c88bb701-72b0-4440-b513-2ffdcb027f78 button.colab-df-convert');
+          document.querySelector('#df-2e5a0e51-c76c-4b31-aefa-34644d1a50bd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c88bb701-72b0-4440-b513-2ffdcb027f78');
+          const element = document.querySelector('#df-2e5a0e51-c76c-4b31-aefa-34644d1a50bd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -798,32 +791,32 @@ edge [fontname=&quot;helvetica&quot;] ;
 0 [label=&quot;x[0] &lt;= 0.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]&quot;] ;
 1 [label=&quot;x[7] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
 0 -&gt; 1 [labeldistance=2.5, labelangle=45, headlabel=&quot;True&quot;] ;
-2 [label=&quot;x[1] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
+2 [label=&quot;x[2] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
 1 -&gt; 2 ;
-3 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
+3 [label=&quot;x[8] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 2 -&gt; 3 ;
-4 [label=&quot;x[9] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
-2 -&gt; 4 ;
+4 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
+3 -&gt; 4 ;
 5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
-4 -&gt; 5 ;
-6 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
-4 -&gt; 6 ;
-7 [label=&quot;x[8] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
+3 -&gt; 5 ;
+6 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
+2 -&gt; 6 ;
+7 [label=&quot;x[9] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
 1 -&gt; 7 ;
-8 [label=&quot;x[3] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+8 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
 7 -&gt; 8 ;
-9 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
-8 -&gt; 9 ;
+9 [label=&quot;x[2] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+7 -&gt; 9 ;
 10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
-8 -&gt; 10 ;
-11 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
-7 -&gt; 11 ;
+9 -&gt; 10 ;
+11 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
+9 -&gt; 11 ;
 12 [label=&quot;gini = 0.0\nsamples = 4\nvalue = [0, 4]&quot;] ;
 0 -&gt; 12 [labeldistance=2.5, labelangle=-45, headlabel=&quot;False&quot;] ;
 }
 </pre></div>
 </div>
-<img alt="_images/3865d3562a5f7fa6da32f1ca033621f4ca6501eb79021e8aaaf8fdad9cfd4a8d.png" src="_images/3865d3562a5f7fa6da32f1ca033621f4ca6501eb79021e8aaaf8fdad9cfd4a8d.png" />
+<img alt="_images/79813eabedab47a3cf6cec27de33b9344c86cd4132ab9135300defc60da8c994.png" src="_images/79813eabedab47a3cf6cec27de33b9344c86cd4132ab9135300defc60da8c994.png" />
 </div>
 </div>
 </div>
@@ -859,15 +852,6 @@ edge [fontname=&quot;helvetica&quot;] ;
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Naive%20Bayes.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Machine Learning Basics: Naive Bayes Classification</strong></p>
-      </div>
-    </a>
 </div></div>
   
 </div>
