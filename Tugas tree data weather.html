@@ -63,8 +63,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas tree data weather';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Machine Learning Basics: Naive Bayes Classification" href="Naive%20Bayes.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,11 +153,18 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>DECISION TREE DATA WEATHER</strong></a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UTS.html"><strong>UTS</strong></a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="Naive%20Bayes.html"><strong>Machine Learning Basics: Naive Bayes Classification</strong></a></li>
+
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -471,7 +476,7 @@ Berikut adalah decision tree:</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-678af0f1-ed37-4b3f-8e46-10ded22c8d58">
+  <div id="df-abae1363-2f4b-4dd5-b843-2f898c845c20">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -689,7 +694,7 @@ Berikut adalah decision tree:</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-678af0f1-ed37-4b3f-8e46-10ded22c8d58')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-abae1363-2f4b-4dd5-b843-2f898c845c20')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -740,12 +745,12 @@ Berikut adalah decision tree:</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-678af0f1-ed37-4b3f-8e46-10ded22c8d58 button.colab-df-convert');
+          document.querySelector('#df-abae1363-2f4b-4dd5-b843-2f898c845c20 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-678af0f1-ed37-4b3f-8e46-10ded22c8d58');
+          const element = document.querySelector('#df-abae1363-2f4b-4dd5-b843-2f898c845c20');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -797,34 +802,34 @@ Berikut adalah decision tree:</p>
 node [shape=box, fontname=&quot;helvetica&quot;] ;
 edge [fontname=&quot;helvetica&quot;] ;
 0 [label=&quot;x[0] &lt;= 0.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]&quot;] ;
-1 [label=&quot;x[6] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
+1 [label=&quot;x[7] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
 0 -&gt; 1 [labeldistance=2.5, labelangle=45, headlabel=&quot;True&quot;] ;
-2 [label=&quot;x[9] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
+2 [label=&quot;x[1] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
 1 -&gt; 2 ;
-3 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
+3 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
 2 -&gt; 3 ;
-4 [label=&quot;x[1] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+4 [label=&quot;x[8] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 2 -&gt; 4 ;
-5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
+5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
 4 -&gt; 5 ;
-6 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
+6 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
 4 -&gt; 6 ;
-7 [label=&quot;x[1] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
+7 [label=&quot;x[9] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
 1 -&gt; 7 ;
-8 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
+8 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
 7 -&gt; 8 ;
-9 [label=&quot;x[8] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+9 [label=&quot;x[3] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 7 -&gt; 9 ;
-10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
+10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
 9 -&gt; 10 ;
-11 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
+11 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
 9 -&gt; 11 ;
 12 [label=&quot;gini = 0.0\nsamples = 4\nvalue = [0, 4]&quot;] ;
 0 -&gt; 12 [labeldistance=2.5, labelangle=-45, headlabel=&quot;False&quot;] ;
 }
 </pre></div>
 </div>
-<img alt="_images/5b8def4852b38d763fa2376455cdd591ed7f5b734c7c4cb39a50cc9d881f94d0.png" src="_images/5b8def4852b38d763fa2376455cdd591ed7f5b734c7c4cb39a50cc9d881f94d0.png" />
+<img alt="_images/af9b09a1bee05d3877aeffc1ce9693265d144dbfbcc80d752d01e65692061bcd.png" src="_images/af9b09a1bee05d3877aeffc1ce9693265d144dbfbcc80d752d01e65692061bcd.png" />
 </div>
 </div>
 </div>
@@ -860,24 +865,6 @@ edge [fontname=&quot;helvetica&quot;] ;
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Naive%20Bayes.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Machine Learning Basics: Naive Bayes Classification</strong></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
