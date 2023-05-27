@@ -171,6 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="../sklearnPCA.html"><strong>sklearnPCA pada data iris</strong></a></li>
 </ul>
 
     </div>
@@ -212,37 +213,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/Pendata/21_144_Firdatul_A'yuni_UTS.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -445,7 +415,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6201352d-cffe-48dc-acc7-3f87f3f5d110">
+  <div id="df-2f4193ca-30e6-4fb7-80d9-0ec44b4d7925">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -546,7 +516,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6201352d-cffe-48dc-acc7-3f87f3f5d110')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2f4193ca-30e6-4fb7-80d9-0ec44b4d7925')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -597,12 +567,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6201352d-cffe-48dc-acc7-3f87f3f5d110 button.colab-df-convert');
+          document.querySelector('#df-2f4193ca-30e6-4fb7-80d9-0ec44b4d7925 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6201352d-cffe-48dc-acc7-3f87f3f5d110');
+          const element = document.querySelector('#df-2f4193ca-30e6-4fb7-80d9-0ec44b4d7925');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -753,9 +723,9 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-     <input type="file" id="files-17427a3e-51c7-47fb-aac4-bf4a612f9766" name="files[]" multiple disabled
+     <input type="file" id="files-da69ad70-cacb-4378-b229-8c474a2d8019" name="files[]" multiple disabled
         style="border:none" />
-     <output id="result-17427a3e-51c7-47fb-aac4-bf4a612f9766">
+     <output id="result-da69ad70-cacb-4378-b229-8c474a2d8019">
       Upload widget is only available when the cell has been executed in the
       current browser session. Please rerun this cell to enable.
       </output>
@@ -939,28 +909,28 @@ scope.google.colab._files = {
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">uploaded</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="n">upload</span><span class="p">()</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/files.py</span> in <span class="ni">upload</span><span class="nt">()</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/files.py</span> in <span class="ni">upload</span><span class="nt">()</span>
 <span class="g g-Whitespace">     </span><span class="mi">67</span>   <span class="s2">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">     </span><span class="mi">68</span><span class="s2"> </span>
 <span class="ne">---&gt; </span><span class="mi">69</span><span class="s2">   uploaded_files = _upload_files(multiple=True)</span>
 <span class="g g-Whitespace">     </span><span class="mi">70</span><span class="s2">   # Mapping from original filename to filename as saved locally.</span>
 <span class="g g-Whitespace">     </span><span class="mi">71</span><span class="s2">   local_filenames = dict()</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/files.py</span> in <span class="ni">_upload_files</span><span class="nt">(multiple)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/files.py</span> in <span class="ni">_upload_files</span><span class="nt">(multiple)</span>
 <span class="g g-Whitespace">    </span><span class="mi">151</span><span class="s2"> </span>
 <span class="g g-Whitespace">    </span><span class="mi">152</span><span class="s2">   # First result is always an indication that the file picker has completed.</span>
 <span class="ne">--&gt; </span><span class="mi">153</span><span class="s2">   result = _output.eval_js(</span>
 <span class="g g-Whitespace">    </span><span class="mi">154</span><span class="s2">       &#39;google.colab._files._uploadFiles(&quot;</span><span class="si">{input_id}</span><span class="s2">&quot;, &quot;</span><span class="si">{output_id}</span><span class="s2">&quot;)&#39;.format(</span>
 <span class="g g-Whitespace">    </span><span class="mi">155</span><span class="s2">           input_id=input_id, output_id=output_id</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/output/_js.py</span> in <span class="ni">eval_js</span><span class="nt">(script, ignore_result, timeout_sec)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/output/_js.py</span> in <span class="ni">eval_js</span><span class="nt">(script, ignore_result, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">38</span><span class="s2">   if ignore_result:</span>
 <span class="g g-Whitespace">     </span><span class="mi">39</span><span class="s2">     return</span>
 <span class="ne">---&gt; </span><span class="mi">40</span><span class="s2">   return _message.read_reply_from_input(request_id, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">41</span><span class="s2"> </span>
 <span class="g g-Whitespace">     </span><span class="mi">42</span><span class="s2"> </span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">94</span><span class="s2">     reply = _read_next_input_message()</span>
 <span class="g g-Whitespace">     </span><span class="mi">95</span><span class="s2">     if reply == _NOT_READY or not isinstance(reply, dict):</span>
 <span class="ne">---&gt; </span><span class="mi">96</span><span class="s2">       time.sleep(0.025)</span>

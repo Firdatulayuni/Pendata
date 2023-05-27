@@ -63,6 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'UTS';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="sklearnPCA pada data iris" href="sklearnPCA.html" />
     <link rel="prev" title="DECISION TREE DATA WEATHER" href="Tugas%20tree%20data%20weather.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,6 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="sklearnPCA.html"><strong>sklearnPCA pada data iris</strong></a></li>
 </ul>
 
     </div>
@@ -213,37 +215,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/UTS.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -445,7 +416,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cd95e861-d26d-4e00-9d07-1858c1f69623">
+  <div id="df-98db61e8-4a84-41dc-bf48-9fa767100320">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -546,7 +517,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cd95e861-d26d-4e00-9d07-1858c1f69623')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-98db61e8-4a84-41dc-bf48-9fa767100320')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -597,12 +568,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cd95e861-d26d-4e00-9d07-1858c1f69623 button.colab-df-convert');
+          document.querySelector('#df-98db61e8-4a84-41dc-bf48-9fa767100320 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cd95e861-d26d-4e00-9d07-1858c1f69623');
+          const element = document.querySelector('#df-98db61e8-4a84-41dc-bf48-9fa767100320');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -753,9 +724,9 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-     <input type="file" id="files-a572c183-5d7a-4975-97eb-c5b03e0fa0b7" name="files[]" multiple disabled
+     <input type="file" id="files-2003e187-5be5-4f31-acb9-5bd1135f7cd1" name="files[]" multiple disabled
         style="border:none" />
-     <output id="result-a572c183-5d7a-4975-97eb-c5b03e0fa0b7">
+     <output id="result-2003e187-5be5-4f31-acb9-5bd1135f7cd1">
       Upload widget is only available when the cell has been executed in the
       current browser session. Please rerun this cell to enable.
       </output>
@@ -939,28 +910,28 @@ scope.google.colab._files = {
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">uploaded</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="n">upload</span><span class="p">()</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/files.py</span> in <span class="ni">upload</span><span class="nt">()</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/files.py</span> in <span class="ni">upload</span><span class="nt">()</span>
 <span class="g g-Whitespace">     </span><span class="mi">67</span>   <span class="s2">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">     </span><span class="mi">68</span><span class="s2"> </span>
 <span class="ne">---&gt; </span><span class="mi">69</span><span class="s2">   uploaded_files = _upload_files(multiple=True)</span>
 <span class="g g-Whitespace">     </span><span class="mi">70</span><span class="s2">   # Mapping from original filename to filename as saved locally.</span>
 <span class="g g-Whitespace">     </span><span class="mi">71</span><span class="s2">   local_filenames = dict()</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/files.py</span> in <span class="ni">_upload_files</span><span class="nt">(multiple)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/files.py</span> in <span class="ni">_upload_files</span><span class="nt">(multiple)</span>
 <span class="g g-Whitespace">    </span><span class="mi">151</span><span class="s2"> </span>
 <span class="g g-Whitespace">    </span><span class="mi">152</span><span class="s2">   # First result is always an indication that the file picker has completed.</span>
 <span class="ne">--&gt; </span><span class="mi">153</span><span class="s2">   result = _output.eval_js(</span>
 <span class="g g-Whitespace">    </span><span class="mi">154</span><span class="s2">       &#39;google.colab._files._uploadFiles(&quot;</span><span class="si">{input_id}</span><span class="s2">&quot;, &quot;</span><span class="si">{output_id}</span><span class="s2">&quot;)&#39;.format(</span>
 <span class="g g-Whitespace">    </span><span class="mi">155</span><span class="s2">           input_id=input_id, output_id=output_id</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/output/_js.py</span> in <span class="ni">eval_js</span><span class="nt">(script, ignore_result, timeout_sec)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/output/_js.py</span> in <span class="ni">eval_js</span><span class="nt">(script, ignore_result, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">38</span><span class="s2">   if ignore_result:</span>
 <span class="g g-Whitespace">     </span><span class="mi">39</span><span class="s2">     return</span>
 <span class="ne">---&gt; </span><span class="mi">40</span><span class="s2">   return _message.read_reply_from_input(request_id, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">41</span><span class="s2"> </span>
 <span class="g g-Whitespace">     </span><span class="mi">42</span><span class="s2"> </span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
 <span class="g g-Whitespace">     </span><span class="mi">94</span><span class="s2">     reply = _read_next_input_message()</span>
 <span class="g g-Whitespace">     </span><span class="mi">95</span><span class="s2">     if reply == _NOT_READY or not isinstance(reply, dict):</span>
 <span class="ne">---&gt; </span><span class="mi">96</span><span class="s2">       time.sleep(0.025)</span>
@@ -1759,6 +1730,15 @@ Accuracy: 0.39622641509433965
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title"><strong>DECISION TREE DATA WEATHER</strong></p>
       </div>
+    </a>
+    <a class="right-next"
+       href="sklearnPCA.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>sklearnPCA pada data iris</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   

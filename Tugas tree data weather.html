@@ -173,6 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="sklearnPCA.html"><strong>sklearnPCA pada data iris</strong></a></li>
 </ul>
 
     </div>
@@ -214,37 +215,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/Tugas tree data weather.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -515,7 +485,7 @@ Berikut adalah decision tree:</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e9aa2e95-272f-48d7-b132-3b97198b6056">
+  <div id="df-41773f8e-73bf-49b1-99fe-8a2e65347b83">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -733,7 +703,7 @@ Berikut adalah decision tree:</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e9aa2e95-272f-48d7-b132-3b97198b6056')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-41773f8e-73bf-49b1-99fe-8a2e65347b83')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -784,12 +754,12 @@ Berikut adalah decision tree:</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e9aa2e95-272f-48d7-b132-3b97198b6056 button.colab-df-convert');
+          document.querySelector('#df-41773f8e-73bf-49b1-99fe-8a2e65347b83 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e9aa2e95-272f-48d7-b132-3b97198b6056');
+          const element = document.querySelector('#df-41773f8e-73bf-49b1-99fe-8a2e65347b83');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -841,34 +811,34 @@ Berikut adalah decision tree:</p>
 node [shape=box, fontname=&quot;helvetica&quot;] ;
 edge [fontname=&quot;helvetica&quot;] ;
 0 [label=&quot;x[0] &lt;= 0.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]&quot;] ;
-1 [label=&quot;x[7] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
+1 [label=&quot;x[6] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
 0 -&gt; 1 [labeldistance=2.5, labelangle=45, headlabel=&quot;True&quot;] ;
-2 [label=&quot;x[2] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
+2 [label=&quot;x[8] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
 1 -&gt; 2 ;
-3 [label=&quot;x[8] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+3 [label=&quot;x[2] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 2 -&gt; 3 ;
 4 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
 3 -&gt; 4 ;
 5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
 3 -&gt; 5 ;
-6 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
+6 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
 2 -&gt; 6 ;
-7 [label=&quot;x[8] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
+7 [label=&quot;x[2] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
 1 -&gt; 7 ;
-8 [label=&quot;x[1] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+8 [label=&quot;x[9] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 7 -&gt; 8 ;
 9 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
 8 -&gt; 9 ;
 10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
 8 -&gt; 10 ;
-11 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
+11 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
 7 -&gt; 11 ;
 12 [label=&quot;gini = 0.0\nsamples = 4\nvalue = [0, 4]&quot;] ;
 0 -&gt; 12 [labeldistance=2.5, labelangle=-45, headlabel=&quot;False&quot;] ;
 }
 </pre></div>
 </div>
-<img alt="_images/fc3413ec2741eecd6e84ad2064a30a2e3a838578829f1e6f040c2978c615d820.png" src="_images/fc3413ec2741eecd6e84ad2064a30a2e3a838578829f1e6f040c2978c615d820.png" />
+<img alt="_images/2601c9794cc4f1f716dd64c37fc57f06c47a7b9a939efdc5d4a1682c4377b05d.png" src="_images/2601c9794cc4f1f716dd64c37fc57f06c47a7b9a939efdc5d4a1682c4377b05d.png" />
 </div>
 </div>
 </div>
