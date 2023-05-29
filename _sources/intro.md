@@ -1,11 +1,9 @@
-# Welcome to your Jupyter Book
+# PENAMBANGAN DATA
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Firdatul A'yuni/210411100144
 
-Check out the content pages bundled with this sample book to see more.
+
+Penambangan data adalah teknik berbantuan komputer yang digunakan dalam analitik untuk memproses dan mengeksplorasi set data besar. Dengan alat dan metode penambangan data, organisasi dapat menemukan pola dan hubungan tersembunyi dalam data mereka. Penambangan data mentransformasi data mentah menjadi pengetahuan praktis. Perusahaan menggunakan pengetahuan ini untuk memecahkan masalah, menganalisis dampak masa depan dari keputusan bisnis, serta meningkatkan margin keuntungan mereka.
 
 ```{tableofcontents}
 ```
